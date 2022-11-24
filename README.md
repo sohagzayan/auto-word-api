@@ -30,7 +30,7 @@
 
 - Api Deploying on Railway
 
-## Project Run Command Client-Side
+## Project Run Command server-Side
 
 - yarn
 - yarn start dev
