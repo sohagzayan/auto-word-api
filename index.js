@@ -3,11 +3,12 @@ const app = express();
 const dotenv = require("dotenv");
 const colors = require("colors");
 const PORT = process.env.PORT || 5000;
-
+const cors = require("cors");
 const productRoute = require("./Routes/products.route");
 
 dotenv.config();
 app.use(express.json());
+app.use(cors());
 
 /* Routes */
 app.use("/api/", productRoute);
