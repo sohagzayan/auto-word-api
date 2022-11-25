@@ -25,6 +25,7 @@ exports.getAllProduct = async (req, res) => {
 exports.getSingleProduct = async (req, res) => {
   try {
     const id = req.params.id;
+    console.log(id);
     const product = await Product.findById({ _id: id });
     res.status(200).json({ status: "Success", data: product });
   } catch (error) {
